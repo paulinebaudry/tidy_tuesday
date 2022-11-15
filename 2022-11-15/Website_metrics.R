@@ -36,9 +36,10 @@ ggplot(data = ally_scores, aes(x=date, y =p50)) +
   #Add the median 
   geom_line( color="#1A3A47", alpha =1,size=0.5)+
   #Add titles
-  ggtitle("Distribution of web page accessibility scores", subtitle = 'Lighthouse accessibility scores per month (2018-2022)') + 
+  ggtitle("Distribution of web page accessibility scores", subtitle = 'Lighthouse accessibility scores per month (2017-2022)') + 
   #Add axes, axes titles and source caption
   scale_y_continuous(limits = c(20, 100)) +
+  scale_x_date(date_breaks = "years",limits=c(as.Date('2017-06-01'), as.Date('2022-10-01')),expand=c(0, .9),date_labels = "%Y")+
   labs(x= "\n ", y = "Accessibility score (%)\n", caption = "Source: Data from httparchive.org. Score categories (Low to High) as suggested by blackboard.com.")+
   #Add two horizontal lines for score categories
   geom_hline(yintercept=66,color = "#5d7079",size = 0.8, alpha=1,linetype="dashed")+
