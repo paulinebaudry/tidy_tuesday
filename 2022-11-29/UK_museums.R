@@ -14,7 +14,7 @@ museums <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
 #Remove row with faulty coordinates
 museums <- museums[!(museums$Latitude >90),]
 
-uk <- readOGR("https://raw.githubusercontent.com/paulinebaudry/tidy_tuesday/blob/main/2022-11-29/NUTS1_Jan_2018_SGCB_in_the_UK.shp")
+uk <- readOGR("https://github.com/paulinebaudry/tidy_tuesday/blob/main/2022-11-29/NUTS1_Jan_2018_SGCB_in_the_UK.shp")
 uk_sf <- st_as_sf(uk)
 
 #Clean year column
