@@ -93,7 +93,7 @@ plot_usmap("states",color = "#E6EAEF",fill = "#4e5f6e",size=0.2) +
   theme(plot.background = element_rect(fill = "#E6EAEF",colour="#E6EAEF"),
         text=element_text(family="Roboto",size =24),
         plot.title = element_text(hjust = 0.25, vjust=5.5,size = 86,face = "bold",colour = "#3e4c58"),
-        plot.subtitle = element_text(hjust = -2.5, vjust = 5.5,size = 54, colour = "#3e4c58",lineheight = 0.2),
+        plot.subtitle = element_text(hjust = 2, vjust = 5.5,size = 54, colour = "#3e4c58",lineheight = 0.2),
         legend.position=c(-0.3,-0.1),
         legend.text = element_text(size=38, colour = "#3e4c58"),
         legend.title = element_text(size=38, colour = "#3e4c58", face = "bold",lineheight = 0.2),
@@ -103,7 +103,7 @@ plot_usmap("states",color = "#E6EAEF",fill = "#4e5f6e",size=0.2) +
         legend.spacing.y = unit(0.5, 'cm'),
         plot.caption = element_text(colour = "#3e4c58",size=32,hjust=0.9,vjust = -10),
         plot.margin=unit(c(1,0,0.5,5),"cm"))+
-  labs(subtitle = "Weather conditions in US cities on February 14, 2021, the average coldest day of that year",caption = "Source: Data from the USA National Weather Service")+
+  labs(subtitle = "Weather conditions in the US on February 14, 2021, the coldest day of that year on average across cities",caption = "Source: Data from the USA National Weather Service")+
   ggtitle("Cold Valentine")
 
 ##Save the map
